@@ -5,6 +5,7 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.Scanner;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -64,6 +65,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        getUserActivity("Amit-sanuria");
+        Scanner sc = new Scanner(System.in);
+        String userName = sc.nextLine();
+        getUserActivity(userName);
     }
 }
